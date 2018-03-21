@@ -29,7 +29,7 @@ header {
 }
 
 #responsive_logo {
-    background: url("http://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png");
+    background: url(images/responsive_logo.png);
     background-size: 100% 100%;
     display: none;
     height: 36px;
@@ -112,22 +112,6 @@ ul > li.menu:hover > ul.submenu {
     display: inline-block;
 }
 
-.trash {
-    background-image: url('http://store.edgecast.steamstatic.com/public/shared/images/header/btn_header_installsteam_gray.png?v=1');
-    background-position: 0 -21px;
-    background-repeat: repeat-x;
-    color: #e5e4dc;
-    display: inline-block;
-    font-size: 9px;
-    font-weight: normal;
-    height: 21px;
-    line-height: 21px;
-    padding-left: 27px;
-    padding-right: 7px;
-    text-decoration: none;
-    text-transform: none;
-}
-
 body {
     background: #1b2838;
     font-family: "Motiva Sans", sans-serif;
@@ -166,7 +150,7 @@ body {
 }
 
 .icon_friends {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     display: inline-block;
     height: 16px;
     margin-right: 4px;
@@ -175,7 +159,7 @@ body {
 }
 
 .icon_curators {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     background-position: -16px 0;
     display: inline-block;
     height: 16px;
@@ -185,7 +169,7 @@ body {
 }
 
 .icon_marks {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     background-position: -32px 0;
     display: inline-block;
     height: 16px;
@@ -195,7 +179,7 @@ body {
 }
 
 .icon_recomends {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     background-position: -48px 0;
     display: inline-block;
     height: 16px;
@@ -205,7 +189,7 @@ body {
 }
 
 .icon_new {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     background-position: -64px 0;
     display: inline-block;
     height: 16px;
@@ -215,7 +199,7 @@ body {
 }
 
 .icon_leader {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     background-position: -80px 0;
     display: inline-block;
     height: 16px;
@@ -225,7 +209,7 @@ body {
 }
 
 .icon_new_upadates {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     background-position: -96px 0;
     display: inline-block;
     height: 16px;
@@ -235,7 +219,7 @@ body {
 }
 
 .icon_new_v2 {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     background-position: -112px 0px;
     display: inline-block;
     height: 16px;
@@ -245,7 +229,7 @@ body {
 }
 
 .icon_comming_soon {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     background-position: -128px 0;
     display: inline-block;
     height: 16px;
@@ -255,7 +239,7 @@ body {
 }
 
 .icon_discount {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     background-position: -144px 0;
     display: inline-block;
     height: 16px;
@@ -265,7 +249,7 @@ body {
 }
 
 .icon_VR {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     background-position: -160px 0;
     display: inline-block;
     height: 16px;
@@ -275,7 +259,7 @@ body {
 }
 
 .icon_controller {
-    background-image: url(http://store.edgecast.steamstatic.com/public/images/v6/store_menu_icons.png?v=2);
+    background-image: url(images/icons.png);
     background-position: -176px 0;
     display: inline-block;
     height: 16px;
@@ -285,11 +269,10 @@ body {
 }
 
 .main_picture {
+    background: url(images/main_picture.jpg) no-repeat;
     background-size: 100% 100%;
-    background: url(http://cdn.edgecast.steamstatic.com/steam/clusters/frontpage/074bf7d622f472dbc1d97909/page_bg_russian.jpg?t=1519929344);
     height: 350px;
-    position: relative;
-    width: 100%;
+    width: auto;
 
 }
 
@@ -309,7 +292,7 @@ body {
 }
 
 .wish_list {
-    background: url("http://store.edgecast.steamstatic.com/public/images/v6/storemenu/background_wishlist.jpg");
+    background: url(images/background_wishlist.jpg);
     box-shadow: 0 0 3px #000;
     display: block;
     height: 20px;
@@ -460,7 +443,7 @@ aside.popular > a {
 }
 
 .sub_popular_container {
-    background-image: url("http://store.edgecast.steamstatic.com/public/images/v6/home/background_maincap_2.jpg");
+    background-image: url(images/background_maincap_2.jpg);
     background-size: 100% 100%;
     height: 350px;
     width: 317px;
@@ -487,7 +470,7 @@ aside.sub_popular_container > a {
 }
 
 .first_picture {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/252950/ss_e1b59c3c1cf9eafc1a196406a184d80e4614f2be.116x65.jpg?t=1520273802");
+    background: url(images/first_picture.jpg);
     background-size: 100% 100%;
     height: 65px;
     width: 115px;
@@ -496,17 +479,17 @@ aside.sub_popular_container > a {
 .second_picture {
     width: 115px;
     height: 65px;
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/252950/ss_d84ce663949107cdb2bf395afad1cfb1403bfd5b.116x65.jpg?t=1520273802");
+    background: url(images/second_picture.jpg);
 }
 
 .third_picture {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/252950/ss_b576da024df9b940ca1383218f165b73638a16e6.116x65.jpg?t=1520273802");
+    background: url(images/third_picture.jpg);
     height: 65px;
     width: 115px;
 }
 
 .forth_picture {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/252950/ss_a771aea215ca4c4f60773eca8e084538f69c7b36.116x65.jpg?t=1520273802");
+    background: url(images/forth_picture.jpg);
     height: 65px;
     width: 115px;
 }
@@ -537,7 +520,7 @@ aside.sub_popular_container > a {
 }
 
 .win_logo {
-    background: url("http://store.edgecast.steamstatic.com/public/images/v6/icon_platform_win.png?v=3");
+    background: url(images/win_logo.png);
     display: inline-block;
     float: right;
     height: 20px;
@@ -554,14 +537,14 @@ aside.sub_popular_container > a {
 }
 
 .first_special {
-    background: url("http://cdn.edgecast.steamstatic.com/steam/spotlights/6d74502f2def9fa36cba8d9a/spotlight_image_english.jpg?t=1521064026");
+    background: url(images/firrst_special.jpg);
     background-size: 100% 100%;
     height: 330px;
     width: 274.6px;
 }
 
 .second_special {
-    background: url("http://cdn.edgecast.steamstatic.com/steam/spotlights/c99df0c0145e8cd05d2585da/spotlight_image_russian.jpg?t=1521139995");
+        background: url(images/second_special.jpg);
     background-size: 100% 100%;
     height: 330px;
     width: 274.6px;
@@ -574,14 +557,14 @@ aside.sub_popular_container > a {
 }
 
 .forth_special {
-    background: url("http://cdn.edgecast.steamstatic.com/steam/apps/306760/header.jpg?t=1521094354");
+    background: url(images/third_picture.jpg);
     background-size: 100% 100%;
     height: 164px;
     width: 274.6px;
 }
 
 .fifth_special {
-    background: url("http://cdn.edgecast.steamstatic.com/steam/apps/389730/header.jpg?t=1511774477");
+    background: url(images/forth_special.jpg);
     background-size: 100% 100%;
     height: 164px;
     width: 274.6px;
@@ -597,7 +580,7 @@ aside.sub_popular_container > a {
 
 .first_section {
     align-items: center;
-    background: url("http://store.edgecast.steamstatic.com/public/images/v6/home/background_spotlight.jpg");
+    background: url(images/background_spotlight.jpg);
     display: flex;
     justify-content: center;
     width: 195px;
@@ -605,7 +588,7 @@ aside.sub_popular_container > a {
 
 .second_section {
     align-items: center;
-    background: url("http://store.edgecast.steamstatic.com/public/images/v6/home/background_spotlight.jpg");
+    background: url(images/background_spotlight.jpg);
     display: flex;
     justify-content: center;
     width: 195px;
@@ -613,7 +596,7 @@ aside.sub_popular_container > a {
 
 .third_section {
     align-items: center;
-    background: url("http://store.edgecast.steamstatic.com/public/images/v6/home/background_spotlight.jpg");
+    background: url(images/background_spotlight.jpg);
     display: flex;
     justify-content: center;
     width: 195px;
@@ -621,7 +604,7 @@ aside.sub_popular_container > a {
 
 .forth_section {
     align-items: center;
-    background: url("http://store.edgecast.steamstatic.com/public/images/v6/home/background_spotlight.jpg");
+    background: url(images/background_spotlight.jpg);
     display: flex;
     justify-content: center;
     width: 195px;
@@ -744,7 +727,7 @@ aside.sub_popular_container > a {
 
     .responsive_container {
         padding-left: 10%;
-        width: auto;
+        width: 100%;
     }
 
     .popular_sections {
