@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input id="#req" type="text">
+    <input type="submit" onclick="get()">
+</div>
+<div id="#find"></div>
+</body>
+<script>
+    function get(){
+        'use strict';
+        fetch(`https://api.github.com/users/${document.getElementById('#req').value}`)
+            .then((response => {
+                if(response.status===200){
+            return response.json();
+        }
+    else {
+            alert('Something wrong happened. Response status:'+response.status)
+        }
+    }))
+    .then(user => {
+            let elements = [document.createElement('img'), document.createElement('h2'), document.createElement('p'), document.createElement('p'), document.createElement('p'),
+                document.createElement('p'), document.createElement('p')];
+        elements[0].src = user["avatar_url"];
+        elements[1].innerText = user["name"];
+        elements[2].innerText = user["login"];
+        elements[3].innerText = user["bio"];
+        elements[4].innerText = user["company"];
+        elements[5].innerText = user["location"];
+        elements[6].innerText = user["blog"];
+        Array.from(document.getElementById('#find').children).map(child => {
+            child.remove();
+    });
+        elements.map(item => {
+            document.getElementById('#find').appendChild(item);
+    });
+    });
+    }
+</script>
+</html>
