@@ -3,43 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="kek.css" rel="stylesheet">
+
 </head>
 <body>
 <div>
-    <input id="#req" type="text">
-    <input type="submit" onclick="get()">
+<input type="text" id="#log">
+    <button type="button" id="Sub" onclick="find()">Find</button>
+<div>
+    <img id="image">
+    <p id="name"></p>
+    <p id="login"></p>
+    <p id="bio"></p>
+    <p id="company"></p>
+    <p id="location"></p>
+    <a href="#" id="blog"></a>
 </div>
-<div id="#find"></div>
+</div>
+<script src="index.js" rel="script"></script>
 </body>
-<script>
-    function get(){
-        'use strict';
-        fetch(`https://api.github.com/users/${document.getElementById('#req').value}`)
-            .then((response => {
-                if(response.status===200){
-            return response.json();
-        }
-    else {
-            alert('Something wrong happened. Response status:'+response.status)
-        }
-    }))
-    .then(user => {
-            let elements = [document.createElement('img'), document.createElement('h2'), document.createElement('p'), document.createElement('p'), document.createElement('p'),
-                document.createElement('p'), document.createElement('p')];
-        elements[0].src = user["avatar_url"];
-        elements[1].innerText = user["name"];
-        elements[2].innerText = user["login"];
-        elements[3].innerText = user["bio"];
-        elements[4].innerText = user["company"];
-        elements[5].innerText = user["location"];
-        elements[6].innerText = user["blog"];
-        Array.from(document.getElementById('#find').children).map(child => {
-            child.remove();
-    });
-        elements.map(item => {
-            document.getElementById('#find').appendChild(item);
-    });
-    });
-    }
-</script>
 </html>
