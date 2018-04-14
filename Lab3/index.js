@@ -1,3 +1,10 @@
+(function() {
+    document.querySelector('input').addEventListener('keydown', function(e) {
+        if (e.keyCode === 13) {
+        find();
+        }
+    });
+})();
 function find() {
     fetch(`https://api.github.com/users/${document.getElementById('#log').value}`)
         .then(function (response) {
@@ -7,6 +14,7 @@ function find() {
         })
         .then(function (data) {
             if (data !== undefined) {
+                document.getElementById('image').style.display = "block";
                 document.getElementById('image').src = data["avatar_url"];
                 document.getElementById('name').textContent = data["name"];
                 document.getElementById('login').textContent = data["login"];
